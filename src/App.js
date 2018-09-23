@@ -1,5 +1,8 @@
 import React from "react";
 import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ImageSlider from "./components/ImageSlider";
 
 function App(props) {
     return (
@@ -8,29 +11,7 @@ function App(props) {
 	
 			<div className="header">
 	
-			<div className="top-header">
-				<div className="top-header-left">
-					<ul>
-						<li className="active"><a href="#">Home</a></li>
-						<li><a href="#">Specials</a></li>
-						<li><a href="#">Delivery</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div>
-				<div className="top-header-right">
-					<ul>
-						<li><a href="#">CURRENCY:</a></li>
-						<li>
-							<select>
-								<option>Dollar</option>
-								<option>Euro</option>
-								<option>Pound</option>
-							</select>
-						</li>
-					</ul>
-				</div>
-				<div className="clear"> </div>
-			</div>
+			<Header />
 			<div className="clear"> </div>
 			<div className="sub-header">
 				<div className="logo">
@@ -62,15 +43,7 @@ function App(props) {
 			</div>
 			
 		
-					<div className="image-slider">
-				
-					    <ul className="rslides" id="slider1">
-					      <li><img src="images/slider1.jpg" alt="" /></li>
-					      <li><img src="images/slider3.jpg" alt="" /></li>
-					      <li><img src="images/slider1.jpg" alt="" /></li>
-					    </ul>
-					
-					</div>
+					<ImageSlider />
 				
 				<div className="content">
 					<div className="products-box">
@@ -189,16 +162,7 @@ function App(props) {
 						<li><a href="#">Locations</a></li>
 					</ul>
 				</div>
-				<div className="col_1_of_4 span_1_of_4 footer-lastgrid">
-					<h3>Get in touch</h3>
-					<ul>
-						<li><a href="#"><img src="images/facebook.png" title="facebook" /></a></li>
-						<li><a href="#"><img src="images/twitter.png" title="Twiiter" /></a></li>
-						<li><a href="#"><img src="images/rss.png" title="Rss" /></a></li>
-						<li><a href="#"><img src="images/gpluse.png" title="Google+" /></a></li>
-					</ul>
-					<p>Design by <a href="#">W3layouts</a></p>
-				</div>
+				<Footer />
 			</div>
 			</div>
 		</div>
